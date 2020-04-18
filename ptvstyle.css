@@ -1,0 +1,68 @@
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    } */
+    /* #container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#container>div {
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+} */
+
+/* negative paddings are treated as 0 so woohoo */
+#container>div {
+  /* up to 3 boxes in a row */
+  padding: 0 calc((100% - 180px * 3) / 6);
+}
+#container>div {
+  /* up to 4 boxes in a row */
+  //padding: 0 calc((100% - 180px * 4) / 8);
+}
+#container>div {
+  /* up to 5 boxes in a row */
+  //padding: 0 calc((100% - 180px * 5) / 10);
+}
+/* 180px = width + horizontal margins */
+  img {
+    width: 450px;
+    height: 300px;
+  }
+
+body,
+html {
+  width: 50%;
+  height: 50%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) /*no-repeat center center fixed;*/
+ /*-webkit-background-size: ;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;*/
+}
+.container {
+align-items: stretch
+}
+h6 {
+    height: 80px;
+    font: bold 50px Helvetica, Sans-Serif;
+
+    color: black; /* fallback */
+    color: rgba(0,0,0,0.2);
+
+    text-shadow:
+        0 0 2px rgba(0,0,0,0.2),
+        0 0 4px rgba(0,0,0,0.2),
+        0 0 6px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.2s linear;
+}
+h6:hover {
+    color: rgba(28, 28, 28, 0.2);
+    opacity: 0.8;
+    letter-spacing: 15px;
+    font-size: 70px;
+}
